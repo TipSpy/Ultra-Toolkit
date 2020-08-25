@@ -54,8 +54,8 @@
             this.general = new System.Windows.Forms.TabPage();
             this.micros = new System.Windows.Forms.TabPage();
             this.gateCentral = new System.Windows.Forms.TabPage();
-            this.closeGC = new System.Windows.Forms.Button();
             this.openGC = new System.Windows.Forms.Button();
+            this.closeGC = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.serviceList)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.general.SuspendLayout();
@@ -301,7 +301,7 @@
             this.general.Location = new System.Drawing.Point(4, 22);
             this.general.Name = "general";
             this.general.Padding = new System.Windows.Forms.Padding(3);
-            this.general.Size = new System.Drawing.Size(302, 563);
+            this.general.Size = new System.Drawing.Size(302, 570);
             this.general.TabIndex = 0;
             this.general.Text = "General Tools";
             this.general.UseVisualStyleBackColor = true;
@@ -317,7 +317,7 @@
             this.micros.Location = new System.Drawing.Point(4, 22);
             this.micros.Name = "micros";
             this.micros.Padding = new System.Windows.Forms.Padding(3);
-            this.micros.Size = new System.Drawing.Size(302, 563);
+            this.micros.Size = new System.Drawing.Size(302, 570);
             this.micros.TabIndex = 1;
             this.micros.Text = "Micros Tools";
             this.micros.UseVisualStyleBackColor = true;
@@ -334,15 +334,6 @@
             this.gateCentral.Text = "Gate Central Tools";
             this.gateCentral.UseVisualStyleBackColor = true;
             // 
-            // closeGC
-            // 
-            this.closeGC.Location = new System.Drawing.Point(6, 6);
-            this.closeGC.Name = "closeGC";
-            this.closeGC.Size = new System.Drawing.Size(139, 69);
-            this.closeGC.TabIndex = 1014;
-            this.closeGC.Text = "Close GC";
-            this.closeGC.UseVisualStyleBackColor = true;
-            // 
             // openGC
             // 
             this.openGC.Location = new System.Drawing.Point(151, 6);
@@ -352,11 +343,20 @@
             this.openGC.Text = "Open GC";
             this.openGC.UseVisualStyleBackColor = true;
             // 
+            // closeGC
+            // 
+            this.closeGC.Location = new System.Drawing.Point(6, 6);
+            this.closeGC.Name = "closeGC";
+            this.closeGC.Size = new System.Drawing.Size(139, 69);
+            this.closeGC.TabIndex = 1014;
+            this.closeGC.Text = "Close GC";
+            this.closeGC.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1459, 612);
+            this.ClientSize = new System.Drawing.Size(674, 612);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.hideServicesList);
             this.Controls.Add(this.restartService);

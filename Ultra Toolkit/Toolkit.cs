@@ -90,17 +90,17 @@ namespace Ultra_Toolkit
         {
             //Commands.RunPowershell("echo \"hi\"");
             //Commands.RunPowershell("(Get-WmiObject Win32_Service -ComputerName " + hostname.Text + " | ?{ $_.ProcessName -match '" + serviceName + "' }).Terminate()");
-            Commands.RunPowershell("(Get-WmiObject -ComputerName " + hostname.Text + " -Class Win32_Service -Filter \"Name='" + serviceName + "'\").stopservice()");
+            Commands.RunPowershell("(Get-WmiObject -ComputerName " + hostname.Text + " -Class Win32_Service -Filter \\\"Name='" + serviceName + "'\\\").stopservice()");
         }
 
         public void StartRemoteService(string serviceName)
         {
-            Commands.RunPowershell("(Get-WmiObject Win32_Process -ComputerName " + hostname.Text + " | ?{ $_.ProcessName -match '" + serviceName + "' }).Start()");
+            Commands.RunPowershell("(Get-WmiObject Win32_Process -ComputerName " + hostname.Text + " | ?{ $_.ProcessName -match \\\"" + serviceName + "\\\" }).Start()");
         }
 
         public void RestartRemoteService(string serviceName)
         {
-            Commands.RunPowershell("(Get-WmiObject Win32_Process -ComputerName " + hostname.Text + " | ?{ $_.ProcessName -match '" + serviceName + "' }).Restart()");
+            Commands.RunPowershell("(Get-WmiObject Win32_Process -ComputerName " + hostname.Text + " | ?{ $_.ProcessName -match \\\"" + serviceName + "\\\" }).Restart()");
         }
 
         public void disconnect()

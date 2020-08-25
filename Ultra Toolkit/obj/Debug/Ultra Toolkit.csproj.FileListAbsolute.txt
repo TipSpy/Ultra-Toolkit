@@ -8,3 +8,13 @@ C:\Users\Matt Dittmer\source\repos\Ultra Toolkit\Ultra Toolkit\obj\Debug\Ultra T
 C:\Users\Matt Dittmer\source\repos\Ultra Toolkit\Ultra Toolkit\obj\Debug\Ultra Toolkit.exe
 C:\Users\Matt Dittmer\source\repos\Ultra Toolkit\Ultra Toolkit\obj\Debug\Ultra Toolkit.pdb
 C:\Users\Matt Dittmer\source\repos\Ultra Toolkit\Ultra Toolkit\obj\Debug\Ultra_Toolkit.Main.resources
+C:\Users\matt.dittmer.PARKS\Source\Repos\TipSpy\Ultra-Toolkit\Ultra Toolkit\bin\Debug\Ultra Toolkit.exe.config
+C:\Users\matt.dittmer.PARKS\Source\Repos\TipSpy\Ultra-Toolkit\Ultra Toolkit\bin\Debug\Ultra Toolkit.exe
+C:\Users\matt.dittmer.PARKS\Source\Repos\TipSpy\Ultra-Toolkit\Ultra Toolkit\bin\Debug\Ultra Toolkit.pdb
+C:\Users\matt.dittmer.PARKS\Source\Repos\TipSpy\Ultra-Toolkit\Ultra Toolkit\obj\Debug\Ultra Toolkit.csprojAssemblyReference.cache
+C:\Users\matt.dittmer.PARKS\Source\Repos\TipSpy\Ultra-Toolkit\Ultra Toolkit\obj\Debug\Ultra_Toolkit.Main.resources
+C:\Users\matt.dittmer.PARKS\Source\Repos\TipSpy\Ultra-Toolkit\Ultra Toolkit\obj\Debug\Ultra_Toolkit.Properties.Resources.resources
+C:\Users\matt.dittmer.PARKS\Source\Repos\TipSpy\Ultra-Toolkit\Ultra Toolkit\obj\Debug\Ultra Toolkit.csproj.GenerateResource.cache
+C:\Users\matt.dittmer.PARKS\Source\Repos\TipSpy\Ultra-Toolkit\Ultra Toolkit\obj\Debug\Ultra Toolkit.csproj.CoreCompileInputs.cache
+C:\Users\matt.dittmer.PARKS\Source\Repos\TipSpy\Ultra-Toolkit\Ultra Toolkit\obj\Debug\Ultra Toolkit.exe
+C:\Users\matt.dittmer.PARKS\Source\Repos\TipSpy\Ultra-Toolkit\Ultra Toolkit\obj\Debug\Ultra Toolkit.pdb
