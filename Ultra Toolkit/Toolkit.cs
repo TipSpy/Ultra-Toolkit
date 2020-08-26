@@ -20,6 +20,7 @@ namespace Ultra_Toolkit
         public Main()
         {
             InitializeComponent();
+
             Logger.LogRTB = LogRTB;
             Logger.List("Welcome to Ultra Toolkit!");
             Logger.List("To begin, enter a hostname above!");
@@ -31,9 +32,6 @@ namespace Ultra_Toolkit
             serviceList.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             serviceList.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
-
-        public string microsIdentifier = "CPM";
-        public string gateCentralIdentifier = "CP-GC";
 
         public static bool PingCheck(string hostname)
         {
@@ -138,6 +136,8 @@ namespace Ultra_Toolkit
         {
             // something using this ?
             // dwrcc.exe [-?|-?:] [-c:] [-h:] [-m:MachineName] [-u:UserName] [-p:Password | -p:"Password"] [-d:Domain] [-o:TCPport] [-s:SharedSecret] [-r:] [-vnc:] [-a:0|1|2] [-prxa:MRCproxyAddress] [-prxp:MRCproxyPort] [-prxsMRCproxySecret] [-v:] [-md:] [-i:n] [-x:] [-bh:CentralServerHostAddress] [-bpn: CentralServerPortNumber] [-bu:CentralServerUserName] [-bps:CentralServerUserPassword]
+            Commands.RunPowershell("Invoke-WmiMethod -Class win32_process -Name create -ArgumentList  'c:\\Program Files (x86)\\SolarWinds\\DameWare Remote Support\\DWRCC.exe -m " + hostname.Text + "'");
+            Logger.Good("Opening DameWare for '" + hostname.Text + "'");
         }
 
         private void rebootBTN_Click(object sender, EventArgs e)
@@ -266,6 +266,43 @@ namespace Ultra_Toolkit
             {
                 Logger.Error("You must select a service first!");
             }
+        }
+
+        private void LogRTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void superCal_Click(object sender, EventArgs e)
+        {
+            Commands.RunPowershell("Invoke-WmiMethod -Class win32_process -ComputerName " + hostname.Text + " -Name create -ArgumentList  'c:\\MICROS\\SuperCAL\\SuperCAL.exe'");
+            Logger.Good("Launching SuperCAL on '" + hostname.Text + "'");
+        }
+
+        private void redownload_Click(object sender, EventArgs e)
+        {
+            Commands.RunPowershell("Invoke-WmiMethod -Class win32_process -ComputerName " + hostname.Text + " -Name create -ArgumentList  'c:\\MICROS\\SuperCAL\\SuperCAL.exe /redownload'");
+            Logger.Good("Initiating Re-Download on '" + hostname.Text + "'");
+        }
+
+        private void startExplorer_Click(object sender, EventArgs e)
+        {
+            Commands.RunPowershell("Invoke-WmiMethod -Class win32_process -ComputerName " + hostname.Text + " -Name create -ArgumentList  'c:\\Windows\\explorer.exe'");
+            Logger.Good("Launching explorer.exe on '" + hostname.Text + "'");
+        }
+
+        private void startOps_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("IMPLEMENT THIS RN! Find the path of the StartOps app.");
+            //Commands.RunPowershell("Invoke-WmiMethod -Class win32_process -ComputerName " + hostname.Text + " -Name create -ArgumentList  'c:\\Windows\\explorer.exe'");
+            Logger.Good("Launching OPS on '" + hostname.Text + "'");
+        }
+
+        private void restartFreedompay_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("IMPLEMENT THIS RN! Find the name of the freedompay service.");
+            //RestartRemoteService("FCCCCCCC");
+            Logger.Good("Restarting the FreedomPay Service on '" + hostname.Text + "'");
         }
     }
 }

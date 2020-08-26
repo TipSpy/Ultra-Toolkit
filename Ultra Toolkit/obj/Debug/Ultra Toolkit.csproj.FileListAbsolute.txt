@@ -18,3 +18,13 @@ C:\Users\matt.dittmer.PARKS\Source\Repos\TipSpy\Ultra-Toolkit\Ultra Toolkit\obj\
 C:\Users\matt.dittmer.PARKS\Source\Repos\TipSpy\Ultra-Toolkit\Ultra Toolkit\obj\Debug\Ultra Toolkit.csproj.CoreCompileInputs.cache
 C:\Users\matt.dittmer.PARKS\Source\Repos\TipSpy\Ultra-Toolkit\Ultra Toolkit\obj\Debug\Ultra Toolkit.exe
 C:\Users\matt.dittmer.PARKS\Source\Repos\TipSpy\Ultra-Toolkit\Ultra Toolkit\obj\Debug\Ultra Toolkit.pdb
+\\Dittmer-Main\Matt\Ultra-Toolkit\Ultra Toolkit\bin\Debug\Ultra Toolkit.exe.config
+\\Dittmer-Main\Matt\Ultra-Toolkit\Ultra Toolkit\bin\Debug\Ultra Toolkit.exe
+\\Dittmer-Main\Matt\Ultra-Toolkit\Ultra Toolkit\bin\Debug\Ultra Toolkit.pdb
+\\Dittmer-Main\Matt\Ultra-Toolkit\Ultra Toolkit\obj\Debug\Ultra Toolkit.csprojAssemblyReference.cache
+\\Dittmer-Main\Matt\Ultra-Toolkit\Ultra Toolkit\obj\Debug\Ultra_Toolkit.Main.resources
+\\Dittmer-Main\Matt\Ultra-Toolkit\Ultra Toolkit\obj\Debug\Ultra_Toolkit.Properties.Resources.resources
+\\Dittmer-Main\Matt\Ultra-Toolkit\Ultra Toolkit\obj\Debug\Ultra Toolkit.csproj.GenerateResource.cache
+\\Dittmer-Main\Matt\Ultra-Toolkit\Ultra Toolkit\obj\Debug\Ultra Toolkit.csproj.CoreCompileInputs.cache
+\\Dittmer-Main\Matt\Ultra-Toolkit\Ultra Toolkit\obj\Debug\Ultra Toolkit.exe
+\\Dittmer-Main\Matt\Ultra-Toolkit\Ultra Toolkit\obj\Debug\Ultra Toolkit.pdb

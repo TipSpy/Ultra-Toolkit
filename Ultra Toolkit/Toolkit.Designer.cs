@@ -74,6 +74,7 @@
             this.LogRTB.TabIndex = 999;
             this.LogRTB.TabStop = false;
             this.LogRTB.Text = "";
+            this.LogRTB.TextChanged += new System.EventHandler(this.LogRTB_TextChanged);
             // 
             // hostname
             // 
@@ -131,6 +132,7 @@
             this.superCal.TabIndex = 1002;
             this.superCal.Text = "Launch SuperCAL";
             this.superCal.UseVisualStyleBackColor = true;
+            this.superCal.Click += new System.EventHandler(this.superCal_Click);
             // 
             // restartFreedompay
             // 
@@ -140,6 +142,7 @@
             this.restartFreedompay.TabIndex = 1003;
             this.restartFreedompay.Text = "Restart FreedomPay Service";
             this.restartFreedompay.UseVisualStyleBackColor = true;
+            this.restartFreedompay.Click += new System.EventHandler(this.restartFreedompay_Click);
             // 
             // redownload
             // 
@@ -149,6 +152,7 @@
             this.redownload.TabIndex = 1004;
             this.redownload.Text = "Re-Download";
             this.redownload.UseVisualStyleBackColor = true;
+            this.redownload.Click += new System.EventHandler(this.redownload_Click);
             // 
             // startExplorer
             // 
@@ -158,6 +162,7 @@
             this.startExplorer.TabIndex = 1005;
             this.startExplorer.Text = "Start Explorer.exe";
             this.startExplorer.UseVisualStyleBackColor = true;
+            this.startExplorer.Click += new System.EventHandler(this.startExplorer_Click);
             // 
             // damewareConnect
             // 
@@ -214,6 +219,7 @@
             this.startOps.TabIndex = 1013;
             this.startOps.Text = "Start OPS";
             this.startOps.UseVisualStyleBackColor = true;
+            this.startOps.Click += new System.EventHandler(this.startOps_Click);
             // 
             // serviceList
             // 
