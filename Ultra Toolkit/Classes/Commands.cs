@@ -17,9 +17,10 @@ namespace Ultra_Toolkit.Classes
                 // NOT WORKING BECAUSE FILE DOESN'T EXIST
 
                 ps.StartInfo.FileName = System32Path() + @"WindowsPowerShell\v1.0\powershell.exe";
-                ps.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                ps.StartInfo.Arguments = "-Command " + Command;
-                //MessageBox.Show("-Command " + Command + "; pause");
+                //ps.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                ps.StartInfo.Arguments = "-Command " + Command + "; pause";
+                
+                MessageBox.Show("-Command " + Command + "; pause");
                 ps.Start();
                 ps.WaitForExit();
             });

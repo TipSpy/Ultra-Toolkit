@@ -90,7 +90,10 @@ namespace Ultra_Toolkit
             //Commands.RunPowershell("(Get-WmiObject Win32_Service -ComputerName " + hostname.Text + " | ?{ $_.ProcessName -match '" + serviceName + "' }).Terminate()");
             Commands.RunPowershell("(Get-WmiObject -ComputerName " + hostname.Text + " -Class Win32_Service -Filter \\\"Name='" + serviceName + "'\\\").stopservice()");
         }
-
+        public void StopRemoteProcess(string process)
+        {
+            Commands.RunPowershell("(Get-WmiObject Win32_Process -ComputerName " + hostname.Text + " | ?{ $_.ProcessName -match \\\"" + process + "\\\" }).Terminate()");
+        }
         public void StartRemoteService(string serviceName)
         {
             Commands.RunPowershell("(Get-WmiObject Win32_Process -ComputerName " + hostname.Text + " | ?{ $_.ProcessName -match \\\"" + serviceName + "\\\" }).Start()");
@@ -136,7 +139,7 @@ namespace Ultra_Toolkit
         {
             // something using this ?
             // dwrcc.exe [-?|-?:] [-c:] [-h:] [-m:MachineName] [-u:UserName] [-p:Password | -p:"Password"] [-d:Domain] [-o:TCPport] [-s:SharedSecret] [-r:] [-vnc:] [-a:0|1|2] [-prxa:MRCproxyAddress] [-prxp:MRCproxyPort] [-prxsMRCproxySecret] [-v:] [-md:] [-i:n] [-x:] [-bh:CentralServerHostAddress] [-bpn: CentralServerPortNumber] [-bu:CentralServerUserName] [-bps:CentralServerUserPassword]
-            Commands.RunPowershell("Invoke-WmiMethod -Class win32_process -Name create -ArgumentList  'c:\\Program Files (x86)\\SolarWinds\\DameWare Remote Support\\DWRCC.exe -m " + hostname.Text + "'");
+            Commands.RunPowershell("Invoke-WmiMethod -Class win32_process -Name create -ArgumentList  'c:\\Program Files (x86)\\SolarWinds\\DameWare Remote Support\\DWRCC.exe -m:" + hostname.Text + "'");
             Logger.Good("Opening DameWare for '" + hostname.Text + "'");
         }
 
@@ -281,6 +284,8 @@ namespace Ultra_Toolkit
 
         private void redownload_Click(object sender, EventArgs e)
         {
+            StopRemoteService("SarOpsWin32");
+            StopRemoteProcess("SuperStart");
             Commands.RunPowershell("Invoke-WmiMethod -Class win32_process -ComputerName " + hostname.Text + " -Name create -ArgumentList  'c:\\MICROS\\SuperCAL\\SuperCAL.exe /redownload'");
             Logger.Good("Initiating Re-Download on '" + hostname.Text + "'");
         }
@@ -300,8 +305,7 @@ namespace Ultra_Toolkit
 
         private void restartFreedompay_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("IMPLEMENT THIS RN! Find the name of the freedompay service.");
-            //RestartRemoteService("FCCCCCCC");
+            RestartRemoteService("MsrLibHost");
             Logger.Good("Restarting the FreedomPay Service on '" + hostname.Text + "'");
         }
     }
